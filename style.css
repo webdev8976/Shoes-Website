@@ -60,7 +60,7 @@ section nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    transition: 0.2s; 
+    transition: 0.2s;
 }
 
 nav ul li a:hover {
@@ -76,92 +76,209 @@ section nav .icons i {
     transition: 0.3s;
 }
 
-section nav .icons i:hover{
+section nav .icons i:hover {
     color: #c72092;
 }
 
-section .main .main-container{
+section .main .main-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-section .main .main-container .main-text h1{
+section .main .main-container .main-text h1 {
     font-size: 90px;
     line-height: 70px;
     font-family: pyxidium quick;
-    background: linear-gradient(to right, #c72092,#6c14d0);
+    background: linear-gradient(to right, #c72092, #6c14d0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-    left: 5%;
+    left: 4%;
     top: 45px;
-}    
+}
 
-section .main .main-container .main-text h1 span{
+section .main .main-container .main-text h1 span {
     font-size: 70px;
-    background: linear-gradient(to right, #c72092,#6c14d0);
+    background: linear-gradient(to right, #c72092, #6c14d0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}    
+}
 
-section .main .main-container .main-text p{
+section .main .main-container .main-text p {
     width: 600px;
     text-align: justify;
     line-height: 21px;
     position: relative;
     top: 85px;
-    left: 5%;
+    left: 4%;
 }
 
-section .main .main-container .main-image img{
-    width: 650px;
+
+section .main .main-container .main-image img {
+    width: 600px;
     position: relative;
     top: 75px;
     left: 20px;
 
 }
 
-section .main .social-icons{
+section .main .social-icons {
     position: absolute;
     top: 50%;
-    left: 98%;
+    left: 97.5%;
     transform: translate(-50%, -50%);
-    font-size: 19px;
+    font-size: 25px;
+
 }
 
-section .main .social-icons i{
+section .main .social-icons i {
     margin: 8px 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-section .main .social-icons i:hover{
+section .main .social-icons i:hover {
     color: #c72092;
 }
 
-section .main .button{
+section .main .button {
     position: absolute;
-    left: 6%;
+    top: 80%;
+    left: 7%;
     padding: 10px 20px;
     border-radius: 30px;
-    background: linear-gradient(to right,#c72092,#6c14d0);
+    background: linear-gradient(to right, #c72092, #6c14d0);
     text-align: center;
     cursor: pointer;
 
 }
 
-section .main .button a{
-        text-decoration: none;
-        color: white;
+section .main .button a {
+    text-decoration: none;
+    color: white;
 }
 
-section .main .button i{
+section .main .button i {
     margin-left: 5px;
     color: white;
     transition: 0.3s;
 }
 
-section .main .button:hover i{
+section .main .button:hover i {
     transform: translateX(6px);
+}
+
+
+/* products */
+
+.products {
+    width: 100%;
+    box-shadow: 0px 1px 6px gray;
+    padding: 25px 0;
+}
+
+.products h1 {
+    margin: 35px 0;
+    font-size: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.products .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products .box .card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 440px;
+    box-shadow: 0px 0px 8px #6c14d0;
+    margin: 0 25px 25px;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+
+}
+
+.products .box .card .small_card {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+
+.products .box .card:hover .small_card {
+
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.products .box .card .small_card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+}
+
+.products .box .card .small_card i:hover{
+    color: #c72092;
+}
+
+.products .box .card .image img {
+    width: 150px;
+    margin: 15px 0;
+}
+
+.products .box .card .product_text h2 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.products .box .card .product_text p {
+    width: 250px;
+    margin: 8px 0;
+    color: #91919191;
+}
+
+.products .box .card .product_text h3 {
+    margin: 8px 0;
+    font-size: 1.2rem;
+}
+
+.products .box .card .product_text .product_star {
+    margin-bottom: 19px;
+    color: orange;
+    cursor: pointer;
+
+}
+
+.products .box .card .product_text a {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: white;
+    text-decoration: none;
 }
